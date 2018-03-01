@@ -24,3 +24,15 @@
 - 要关联一个远程库，使用命令<code>git remote add origin git@server-name:path/repo-name.git</code>；
 - 关联后，使用命令<code>git push -u origin master</code>第一次推送master分支的所有内容；
 - 此后，每次本地提交后，只要有必要，就可以使用命令<code>git push origin master</code>推送最新修改；
+- 要克隆一个仓库，首先必须知道仓库的地址，然后使用<code>git clone</code>命令克隆。Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
+## 分支管理
+#### 创建与合并分支
+Git鼓励大量使用分支：<br>
+查看分支：<code>git branch</code><br>
+创建分支：<code>git branch &lt;name&gt;</code><br>
+切换分支：<code>git checkout &lt;name&gt;</code><br>
+创建+切换分支：<code>git checkout -b &lt;name&gt;</code><br>
+合并某分支到当前分支：<code>git merge &lt;name&gt;</code><br>
+删除分支：<code>git branch -d &lt;name&gt;</code><br>
+当混帐无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。<br>
+用git log --graph命令可以看到分支合并log。
