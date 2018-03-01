@@ -20,3 +20,7 @@
 - <code>git checkout -- &lt;file&gt;</code>可以用版本库里的版本替换工作区的版本
 - 用命令<code>git reset HEAD &lt;file&gt;</code>可以把暂存区的修改撤销掉（unstage），重新放回工作区。
 <br><code>git reset</code>命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用HEAD时，表示最新的版本。</br>
+##远程仓库
+- 要关联一个远程库，使用命令<code>git remote add origin git@server-name:path/repo-name.git</code>；
+- 关联后，使用命令<code>git push -u origin master</code>第一次推送master分支的所有内容；
+- 此后，每次本地提交后，只要有必要，就可以使用命令<code>git push origin master</code>推送最新修改；
