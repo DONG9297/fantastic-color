@@ -35,4 +35,4 @@
   - 合并某分支到当前分支：<code>git merge &lt;name&gt;</code><br>
   - 删除分支：<code>git branch -d &lt;name&gt;</code><br>
 - 当混帐无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。<br>
-- 用git log --graph命令可以看到分支合并log。
+- 用<code>git log --graph</code>命令可以看到分支合并log。
