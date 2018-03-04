@@ -51,4 +51,8 @@
 - 命令<code>git tag &lt;name&gt;</code>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
 - <code>git tag -a &lt;tagname&gt; -m "blablabla..."</code>可以指定标签信息；
 - <code>git tag -s &lt;tagname&gt; -m "blablabla..."</code>可以用PGP签名标签；
-- 命令<code>git tag可以查看所有标签。
+- 命令<code>git tag</code>可以查看所有标签。
+- 命令<code>git push origin &lt;tagname&gt;</code>可以推送一个本地标签；
+- 命令<code>git push origin --tags</code>可以推送全部未推送过的本地标签；
+- 命令<code>git tag -d &lt;tagname&gt;</code>可以删除一个本地标签；
+- 命令<code>git push origin :refs/tags/&lt;tagname&gt;</code>可以删除一个远程标签。
