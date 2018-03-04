@@ -56,3 +56,8 @@
 - 命令<code>git push origin --tags</code>可以推送全部未推送过的本地标签；
 - 命令<code>git tag -d &lt;tagname&gt;</code>可以删除一个本地标签；
 - 命令<code>git push origin :refs/tags/&lt;tagname&gt;</code>可以删除一个远程标签。
+## 自定义Git
+- 忽略某些文件时，需要编写.gitignore；
+- .gitignore文件本身要放到版本库里，并且可以对.gitignore做版本管理
+- <code>git add -f &lt;name&gt;</code>强制添加被忽略的文件
+- <code>git check-ignore</code>命令检查忽略规则
