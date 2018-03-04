@@ -47,3 +47,8 @@
 - 在本地创建和远程分支对应的分支，使用<code>git checkout -b branch-name origin/branch-name</code>，本地和远程分支的名称最好一致；
 - 建立本地分支和远程分支的关联，使用<code>git branch --set-upstream branch-name origin/branch-name</code>；
 - 从远程抓取分支，使用<code>git pull</code>，如果有冲突，要先处理冲突。
+## 标签
+- 命令<code>git tag &lt;name&gt;</code>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+- <code>git tag -a &lt;tagname&gt; -m "blablabla..."</code>可以指定标签信息；
+- <code>git tag -s &lt;tagname&gt; -m "blablabla..."</code>可以用PGP签名标签；
+- 命令<code>git tag可以查看所有标签。
